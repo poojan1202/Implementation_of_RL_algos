@@ -35,6 +35,11 @@ Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
 
 ### Results
 #### Training Reward
+
+<p align="center">
+    ![](https://i.imgur.com/vVGOUzO.png)
+</p>
+
 ![](https://i.imgur.com/4c6BwhD.png)
 
 #### Simulation
