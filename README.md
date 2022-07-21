@@ -1,5 +1,148 @@
 # Implementation of RL Algorithms
 
+# Sarsa to Q-Learning
+
+## Monte-Carlo
+Implemented Monte-Carlo method on GymMinigrid Envrionment, `MiniGrid-Empty-8x8-v0`.
+
+### Observation Space
+- `gen_obs` generates partially observable agent's view (an image)
+- For discrete observation, we use `agent_pos`, which returns the grid number at which the agent is present.
+
+### Action Space
+
+| Num | Action |
+| ----- | ----- |
+| 0  | Turn Left |
+| 1  | Turn Right|
+| 2  | Move Forward|
+
+### Reward Function
+- Reward is 1 when agent reaches goal, else 0
+
+### Hyperparameters
+- Gamma
+    - 0.9
+- Training Episodes
+    - 75
+- Exploration
+    - Epsilon = Epsilon/1.1
+
+### Results
+#### Training Reward
+
+    
+![](https://i.imgur.com/ZmLvdXs.png)
+
+
+    
+
+
+#### Simulation
+    
+![](https://i.imgur.com/1SNW6ro.gif)
+
+## SARSA-λ and SARSA backward
+
+Implemented SARSA-λ and Backward SARSA method on GymMinigrid Envrionment, `MiniGrid-Empty-8x8-v0` and `MiniGrid-FourRooms-v0`.
+
+### Observation Space
+- `gen_obs` generates partially observable agent's view (an image)
+- For discrete observation, we use `agent_pos`, which returns the grid number at which the agent is present.
+
+### Action Space
+
+| Num | Action |
+| ----- | ----- |
+| 0  | Turn Left |
+| 1  | Turn Right|
+| 2  | Move Forward|
+
+### Reward Function
+- Reward is 1 when agent reaches goal, else 0
+
+### Hyperparameters (SARSA-λ)
+- Gamma
+    - 0.9
+- Sarsa Lambda
+    - 0.99
+- Training Episodes
+    - 50
+- Exploration
+    - Epsilon = Epsilon/1.05
+
+### Results
+#### Training Reward
+  
+![](https://i.imgur.com/A2CMoZF.png)
+
+#### Simulation
+
+![](https://i.imgur.com/Xb5P59S.gif)
+
+### Hyperparameters (SARSA Backward)
+- Gamma
+    - 0.9
+- Sarsa Lambda
+    - 0.9
+- Training Episodes
+    - 25
+- Exploration
+    - Epsilon = Epsilon/1.2
+
+### Results
+#### Training Reward
+  
+![](https://i.imgur.com/xoLWTBO.png)
+
+#### Simulation
+
+![](https://i.imgur.com/TmhVWIn.gif)
+
+
+## Q-Learning
+
+Implemented SARSA-λ and Backward SARSA method on GymMinigrid Envrionment, `MiniGrid-Empty-8x8-v0`.
+
+### Observation Space
+- `gen_obs` generates partially observable agent's view (an image)
+- For discrete observation, we use `agent_pos`, which returns the grid number at which the agent is present.
+
+### Action Space
+
+| Num | Action |
+| ----- | ----- |
+| 0  | Turn Left |
+| 1  | Turn Right|
+| 2  | Move Forward|
+
+### Reward Function
+- Reward is 1 when agent reaches goal, else 0
+
+### Hyperparameters
+- Gamma
+    - Trained agents with 5 different values of gamma
+        - 0.9, 0.7, 0.5, 0.3, 0.1
+- Training Episodes
+    - 150
+- Exploration
+    - Epsilon = Epsilon/1.1
+
+### Results
+#### Training Reward
+
+![](https://i.imgur.com/yKNVz7r.png)
+
+#### Steps vs Episodes
+
+![](https://i.imgur.com/Ui8U81l.png)
+
+
+#### Simulation
+    
+![](https://i.imgur.com/1SNW6ro.gif)
+
+
 ## Deep Q-Learning (DQN)
 Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
 ### Observation Space
@@ -16,7 +159,7 @@ Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
 | Num | Action |
 | ----- | ----- |
 | 0  | Push Cart to Left  |
-| 0  | Push Cart to Right|
+| 1  | Push Cart to Right|
 
 ### Reward Function
 - Reward is 1 for every step taken, including the termination step
@@ -34,30 +177,24 @@ Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
     - 700
 
 ### Results
+
 #### Training Reward
 
-<p align="center">
     
-  ![](https://i.imgur.com/uPbaHUr.png)
+![](https://i.imgur.com/uPbaHUr.png)
 
-</p>
     
 
 
 #### Simulation
-
-<p align="center">
     
-  ![](https://i.imgur.com/u6c28Ka.gif)
-
-</p>
-
+![](https://i.imgur.com/u6c28Ka.gif)
 
 
 
 
 ## Policy Gradient
-Implemented Policy Gradient Method (Actor Critic) on Gym Envrionment, `Gym-CartPole-v0`.
+Implemented Policy Gradient Method (Actor-Critic) on Gym Envrionment, `Gym-CartPole-v0`.
 ### Observation Space
 
 The observation is a `ndarray` with shape `(3,)` representing the x-y coordinates of the pendulum's free end and its angular velocity.
@@ -97,20 +234,15 @@ The observation is a `ndarray` with shape `(3,)` representing the x-y coordinate
 ### Results
 #### Training Reward
 
-<p align="center">
+
     
-  ![](https://i.imgur.com/hQbUuyH.png)
+![](https://i.imgur.com/hQbUuyH.png)
 
-
-</p>
 
 #### Simulation
-
-<p align="center">
     
-  ![](https://i.imgur.com/HUcZWfa.gif)
+![](https://i.imgur.com/HUcZWfa.gif)
 
 
-</p>
 
 
