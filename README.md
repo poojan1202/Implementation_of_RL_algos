@@ -31,13 +31,15 @@ Implemented Monte-Carlo method on GymMinigrid Envrionment, `MiniGrid-Empty-8x8-v
 ### Results
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/ZmLvdXs.png" width="600" height="400" align="Center"> 
-
+</p>
 
 #### Simulation
 
+<p align="center">
 <img src="https://i.imgur.com/1SNW6ro.gif" width="500" height="400" align="Center">
-
+</p>
 
 ## SARSA-λ and SARSA backward
 
@@ -71,11 +73,14 @@ Implemented SARSA-λ and Backward SARSA method on GymMinigrid Envrionment, `Mini
 ### Results
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/A2CMoZF.png" width="600" height="400" align="Center">
-
+</p>
 #### Simulation
-<img src="https://i.imgur.com/Xb5P59S.gif" width="450" height="400" align="Center">
 
+<p align="center">
+<img src="https://i.imgur.com/Xb5P59S.gif" width="450" height="400" align="Center">
+</p>
 ### Hyperparameters (SARSA Backward)
 - Gamma
     - 0.9
@@ -89,8 +94,9 @@ Implemented SARSA-λ and Backward SARSA method on GymMinigrid Envrionment, `Mini
 ### Results
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/xoLWTBO.png" width="600" height="400" align="Center">
-
+</p>
 #### Simulation
 
 <p align="center">
@@ -129,17 +135,21 @@ Implemented SARSA-λ and Backward SARSA method on GymMinigrid Envrionment, `Mini
 ### Results
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/yKNVz7r.png" width="600" height="400" align="Center">
+</p>
 
 #### Steps vs Episodes
 
+<p align="center">
 <img src="https://i.imgur.com/Ui8U81l.png" width="600" height="400" align="Center">
-
+</p>
 
 #### Simulation
 
+<p align="center">
 <img src="https://i.imgur.com/1SNW6ro.gif" width="500" height="400" align="Center">
-
+</p>
 
 ## Deep Q-Learning (DQN)
 Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
@@ -178,13 +188,15 @@ Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
 
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/uPbaHUr.png" width="600" height="400" align="Center"> 
-
+</p>
 
 #### Simulation
 
+<p align="center">
 <img src="https://i.imgur.com/u6c28Ka.gif" width="600" height="400" align="Center">
-
+</p>
 
 ## Policy Gradient
 Implemented Policy Gradient Method (Actor-Critic) on Gym Envrionment, `Gym-CartPole-v0`.
@@ -227,12 +239,14 @@ The observation is a `ndarray` with shape `(3,)` representing the x-y coordinate
 ### Results
 #### Training Reward
 
+<p align="center">
 <img src="https://i.imgur.com/hQbUuyH.png" width="600" height="400" align="Center"> 
-
+</p>
 #### Simulation
 
+<p align="center">
 <img src="https://i.imgur.com/HUcZWfa.gif" width="500" height="400" align="Center">
-
+</p>
 
 
 
