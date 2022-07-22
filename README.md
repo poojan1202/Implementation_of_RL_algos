@@ -242,6 +242,7 @@ The observation is a `ndarray` with shape `(3,)` representing the x-y coordinate
 <p align="center">
 <img src="https://i.imgur.com/hQbUuyH.png" width="600" height="400" align="Center"> 
 </p>
+
 #### Simulation
 
 <p align="center">
