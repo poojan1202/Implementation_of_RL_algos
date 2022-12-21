@@ -189,7 +189,7 @@ Implemented DQN on Gym Envrionment, `Gym-CartPole-v0`.
 #### Training Reward
 
 <p align="center">
-<img src="https://i.imgur.com/uPbaHUr.png" width="600" height="400" align="Center"> 
+<img src="https://i.imgur.com/EFmIOjm.png" width="600" height="400" align="Center"> 
 </p>
 
 #### Simulation
@@ -240,7 +240,7 @@ The observation is a `ndarray` with shape `(3,)` representing the x-y coordinate
 #### Training Reward
 
 <p align="center">
-<img src="https://i.imgur.com/hQbUuyH.png" width="600" height="400" align="Center"> 
+<img src="https://i.imgur.com/9SZnAN6.png" width="600" height="400" align="Center"> 
 </p>
 
 #### Simulation
